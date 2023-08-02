@@ -1,0 +1,72 @@
+
+
+- memset: bu fonksiyon bir bellek bölgesini belirlenen bir değerle 
+belirlenen bayt kadar doldurma işlemidir. (Ex: 333ufemreozden)
+
+- bzero: belli bir bellek bölgesini <null> ile doldurur. 
+
+- memcpy: bir kaynak metninden istediğimiz kadar karakterini destination 
+metninin yerine kopyalanmasıdır. eğer sayımız destination’dan 
+büyükse segmentasyon hatası oluşabilir ya da olduğu gibi source yazılır. 
+
+- memmove: çakışan karakterlerin yazılması işleminde ortaya çıkan yanlış
+kopyalama işelemlerinin önüne geçmek için işleme sondan başlanan fonksiyondur.
+
+- strlcpy: src’den dst’e koyalama işlemi yapar ve src’nin karakter 
+uzunluğunu döndürür. 
+
+- strlcat: src + dst döndürür
+
+- strchr: aradığı karakteri ilk bulduğu yerden itibaren yazdırır.
+
+- strrchr: aradığı karakteri sona en yakın yerden itibaren yazdırır.
+
+- strncmp: ilk farklılaşan karakterlerin sayısal ASCİİ fakrlarını döndürür. 
+
+- memchr: memory’deki datalarda arama yapar ve bulduğu yerden itibaren 
+döndürür. strchr’den farkı void çalışıp char dışındaki verilerde de 
+çalışmasıdır. 
+
+- memcmp: memory’deki datalarda arama yapar ve ilk farklılaşan 
+karakterlerin ASCİİ farkını döndürür. strncmp’den farkı tüm 
+data type’larında çalışır. 
+
+- strnstr: bir stringte daha küçük bir stringi belirtilen karaktere 
+kadar arar ve o karakterden sorasını getirir. (o karakter dahil)
+
+- atoi: bir karakter dizisini tam sayıya dönüştürür
+
+- calloc: bellekte belli bir yer ayarlar ve bu yerleri <NULL> ile doldurur.
+
+- strdup: ft_strlen fonksiyonunu kullanarak bir 
+karakter dizisinin uzunluğunu hesaplar ve daha sonra 
+bu karakter dizisinin bir kopyasını dinamik olarak oluşturmak
+için malloc fonksiyonunu kullanır.
+
+- substr: verilen bir karakter dizisinden belirli bir başlangıç indeksi alır
+ve belirtilen uzunlukla yeni bir alt dizi oluşturur.
+
+- strjoin: bellekte yeni açılan bir yere iki karakter dizisini 
+birleştirerek yeni bir karakter dizisi oluşturur.   
+
+- strtrim: bir karakter dizinde istenilen alt kümeyi çıkartıp geriye kalan 
+kısmı döndüren fonksiyondur ("yusufemreozden" ve "yusuf" girerse "emreozden" çıkar)
+
+- split:
+
+- itoa: integer verilen bir değeri ASCİİ karşılığına çeviren fonksiyondur.
+
+- strmapi: belirtilen bir karakter dizisinin her bi karakterini belirtilen fonksiyonu
+kullanarak çıktısını yeni bi stringe kaydeder.
+
+- striteri: belirtilen bir karakter dizisinin her bi karakterini belirtilen fonksiyonu
+kullanarak çıktısını eski stringin üzerine kaydeder.
+
+- putchar: verilen bir karakteri belirtilen dosya tanıtıcısıyla yazdırır. 
+
+- putstr: bir karakter dizisini belirtilen dosya tanıtıcısına yazdırır.
+
+- putendl: bir karakter dizisini belirtilen dosya tanıtıcına yazdırıp new line atar.
+
+- putnbr: write komutu int yazamadığı için int verilen bir typeı charlara parçalayıp 
+write ile yazdırır. 
